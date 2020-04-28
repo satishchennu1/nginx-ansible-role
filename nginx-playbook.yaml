@@ -1,0 +1,5 @@
+- name: Manage Nginx
+    hosts: webservers 
+    become: true
+    roles:
+          - { role: nginx, tags: ['nginx'] }

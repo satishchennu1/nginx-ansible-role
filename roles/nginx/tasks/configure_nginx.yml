@@ -1,0 +1,3 @@
+- name: Deploy Nginx configuration
+  template: src=sri.conf dest="/etc/nginx/sri.conf"
+  notify: restart nginx
